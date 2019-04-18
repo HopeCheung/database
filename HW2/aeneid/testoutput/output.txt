@@ -1,0 +1,907 @@
+-----------------------Test json2-----------------------
+Result = 
+{
+  "YouSent": "Some JSON. Cool!",
+  "Note": "The cool kids use JSON.",
+  "YourJSONWas": {
+    "p": "cool"
+  }
+}
+-----------------------Test get /api/<dbname>/<table_name>q=<some_query_string----------------------->
+Result = 
+{
+  "data": [
+    {
+      "playerID": "willite01",
+      "nameLast": "Williams",
+      "nameFirst": "Ted",
+      "birthCity": "San Diego"
+    },
+    {
+      "playerID": "willitr01",
+      "nameLast": "Williams",
+      "nameFirst": "Trevor",
+      "birthCity": "San Diego"
+    }
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "href": "http://127.0.0.1:5000/api/lahman2017/people?fields=playerID%2CnameLast%2CnameFirst%2CbirthCity&nameLast=Williams&birthCity=San+Diego&limit=10"
+    },
+    {
+      "rel": "next",
+      "href": "http://127.0.0.1:5000/api/lahman2017/people?fields=playerID%2CnameLast%2CnameFirst%2CbirthCity&nameLast=Williams&birthCity=San+Diego&limit=10&offset=10"
+    },
+    {
+      "rel": "previous",
+      "href": "http://127.0.0.1:5000/api/lahman2017/people?fields=playerID%2CnameLast%2CnameFirst%2CbirthCity&nameLast=Williams&birthCity=San+Diego&limit=10&offset=-10"
+    }
+  ]
+}
+-----------------------Test get /api/<dbname>/<table_name>q=<some_query_string----------------------->
+Result = 
+{
+  "data": [
+    {
+      "people": {
+        "playerID": "willibi01",
+        "nameLast": "Williams",
+        "nameFirst": "Billy"
+      },
+      "batting": [
+        {
+          "AB": "47",
+          "H": "13"
+        }
+      ],
+      "appearances": [
+        {
+          "G_all": "12",
+          "GS": "12"
+        }
+      ]
+    },
+    {
+      "people": {
+        "playerID": "willidi02",
+        "nameLast": "Williams",
+        "nameFirst": "Dick"
+      },
+      "batting": [
+        {
+          "AB": "420",
+          "H": "121"
+        }
+      ],
+      "appearances": [
+        {
+          "G_all": "127",
+          "GS": "105"
+        }
+      ]
+    },
+    {
+      "people": {
+        "playerID": "willist02",
+        "nameLast": "Williams",
+        "nameFirst": "Stan"
+      },
+      "batting": [
+        {
+          "AB": "64",
+          "H": "9"
+        }
+      ],
+      "appearances": [
+        {
+          "G_all": "38",
+          "GS": "30"
+        }
+      ]
+    },
+    {
+      "people": {
+        "playerID": "willite01",
+        "nameLast": "Williams",
+        "nameFirst": "Ted"
+      },
+      "batting": [
+        {
+          "AB": "310",
+          "H": "98"
+        }
+      ],
+      "appearances": [
+        {
+          "G_all": "113",
+          "GS": "87"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "href": "http://127.0.0.1:5000/api/lahman2017/people?children=appearances%2Cbatting&nameLast=Williams&batting.yearID=1960&appearances.yearID=1960&fields=playerID%2CnameLast%2CnameFirst%2Cbatting.AB%2Cbatting.H%2Cappearances.G_all%2Cappearances.GS"
+    },
+    {
+      "rel": "next",
+      "href": "http://127.0.0.1:5000/api/lahman2017/people?children=appearances%2Cbatting&nameLast=Williams&batting.yearID=1960&appearances.yearID=1960&fields=playerID%2CnameLast%2CnameFirst%2Cbatting.AB%2Cbatting.H%2Cappearances.G_all%2Cappearances.GS&limit=10&offset=10"
+    },
+    {
+      "rel": "previous",
+      "href": "http://127.0.0.1:5000/api/lahman2017/people?children=appearances%2Cbatting&nameLast=Williams&batting.yearID=1960&appearances.yearID=1960&fields=playerID%2CnameLast%2CnameFirst%2Cbatting.AB%2Cbatting.H%2Cappearances.G_all%2Cappearances.GS&limit=10&offset=-10"
+    }
+  ]
+}
+-----------------------Test get /api/<dbname>/<table_name>/<primary_key>/<table2_name>?query_string:-----------------------
+Result = 
+{
+  "data": [
+    {
+      "ab": "310",
+      "h": "98"
+    }
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "href": "http://127.0.0.1:5000/api/lahman2017/people/willite01/batting?fields=ab%2Ch&yearid=1960"
+    },
+    {
+      "rel": "next",
+      "href": "http://127.0.0.1:5000/api/lahman2017/people/willite01/batting?fields=ab%2Ch&yearid=1960&limit=10&offset=10"
+    },
+    {
+      "rel": "previous",
+      "href": "http://127.0.0.1:5000/api/lahman2017/people/willite01/batting?fields=ab%2Ch&yearid=1960&limit=10&offset=-10"
+    }
+  ]
+}
+-----------------------Test get /api/<dbname>/<table_name>q=<some_query_string----------------------->
+Result = 
+{
+  "data": [
+    {
+      "batting": {
+        "playerID": "boonera01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "16",
+        "HR": "1",
+        "RBI": "11"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "borlato01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "0",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "bowsfte01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "1",
+        "HR": "0",
+        "RBI": "2"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "breweto01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "12",
+        "HR": "1",
+        "RBI": "2"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "buddido01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "105",
+        "HR": "6",
+        "RBI": "36"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "busbyji01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "0",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "casalje01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "9",
+        "HR": "0",
+        "RBI": "4"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "chittne01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "0",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "clintlo01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "68",
+        "HR": "6",
+        "RBI": "37"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "coughma01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "3",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "delocik01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "5",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "earlear01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "0",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "fornimi01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "6",
+        "HR": "0",
+        "RBI": "1"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "geigega01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "74",
+        "HR": "9",
+        "RBI": "33"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "giledo01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "9",
+        "HR": "1",
+        "RBI": "4"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "greenpu01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "63",
+        "HR": "3",
+        "RBI": "21"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "hardyca01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "34",
+        "HR": "2",
+        "RBI": "15"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "hillmda01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "0",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "jacksro01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "7",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "keougma01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "26",
+        "HR": "1",
+        "RBI": "9"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "malzofr01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "161",
+        "HR": "14",
+        "RBI": "79"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "monbobi01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "6",
+        "HR": "0",
+        "RBI": "1"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "muffebi01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "11",
+        "HR": "0",
+        "RBI": "3"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "nichoch02",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "0",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "nixonru01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "81",
+        "HR": "5",
+        "RBI": "33"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "pagliji01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "19",
+        "HR": "2",
+        "RBI": "9"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "repulri01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "33",
+        "HR": "3",
+        "RBI": "20"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "runnepe01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "169",
+        "HR": "2",
+        "RBI": "35"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "sadowed01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "20",
+        "HR": "3",
+        "RBI": "8"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "stalltr01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "0",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "stephge01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "25",
+        "HR": "2",
+        "RBI": "11"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "sturdto01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "4",
+        "HR": "0",
+        "RBI": "1"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "sullifr01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "5",
+        "HR": "0",
+        "RBI": "2"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "sulliha02",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "20",
+        "HR": "3",
+        "RBI": "10"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "tasbywi01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "108",
+        "HR": "7",
+        "RBI": "37"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "thomsbo01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "30",
+        "HR": "5",
+        "RBI": "20"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "webstra01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "0",
+        "HR": "0",
+        "RBI": "1"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "wertzvi01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "125",
+        "HR": "19",
+        "RBI": "103"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "willite01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "98",
+        "HR": "29",
+        "RBI": "72"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "willste01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "2",
+        "HR": "0",
+        "RBI": "1"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "wilsoea01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "4",
+        "HR": "0",
+        "RBI": "2"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    },
+    {
+      "batting": {
+        "playerID": "worthal01",
+        "teamID": "BOS",
+        "yearID": "1960",
+        "H": "0",
+        "HR": "0",
+        "RBI": "0"
+      },
+      "teams": [
+        {
+          "yearID": "1960",
+          "teamID": "BOS",
+          "W": "65"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "rel": "self",
+      "href": "http://127.0.0.1:5000/api/lahman2017/batting?children=teams&fields=batting.playerID%2Cbatting.teamID%2Cbatting.yearID%2Cbatting.H%2Cbatting.HR%2Cbatting.RBI%2Cteams.yearID%2Cteams.teamID%2Cteams.W&batting.teamID=BOS&batting.yearID=1960"
+    },
+    {
+      "rel": "next",
+      "href": "http://127.0.0.1:5000/api/lahman2017/batting?children=teams&fields=batting.playerID%2Cbatting.teamID%2Cbatting.yearID%2Cbatting.H%2Cbatting.HR%2Cbatting.RBI%2Cteams.yearID%2Cteams.teamID%2Cteams.W&batting.teamID=BOS&batting.yearID=1960&limit=10&offset=10"
+    },
+    {
+      "rel": "previous",
+      "href": "http://127.0.0.1:5000/api/lahman2017/batting?children=teams&fields=batting.playerID%2Cbatting.teamID%2Cbatting.yearID%2Cbatting.H%2Cbatting.HR%2Cbatting.RBI%2Cteams.yearID%2Cteams.teamID%2Cteams.W&batting.teamID=BOS&batting.yearID=1960&limit=10&offset=-10"
+    }
+  ]
+}
+-----------------------Test post /api/<dbname>/<table_name>-----------------------
+status about posting:
+CREATED
+-----------------------Test delete /api/<dbname>/<table_name>/<primary_key>-----------------------
+status about deleting:
+OK
+-----------------------Test post /api/<dbname>/<table_name>/<primary_key>/table_name-----------------------
+status about posint:
+CREATED
+-----------------------Test put /api/<dbname>/<table_name>/<primary_key>-----------------------
+status about updating:
+OK

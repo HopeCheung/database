@@ -1,0 +1,138 @@
+--------------------------Test compute_keys--------------------------
+KV= Hope_Cheung
+I= <src.CSVDataTable.Index object at 0x10e6dd668>
+
+
+--------------------------Test add_index--------------------------
+t= {'PRIMARY': <src.CSVDataTable.Index object at 0x10e6f2588>, 'Name': <src.CSVDataTable.Index object at 0x10e6dd2e8>}
+DEBUG:root:Using index = None
+DEBUG:root:Not swapping tables
+DEBUG:root:Before pushdowm, scan rows = 5
+DEBUG:root:Using index = None
+DEBUG:root:After pushdown, scan rows = 5
+DEBUG:root:Using index = PRIMARY
+DEBUG:root:Using index = PRIMARY
+DEBUG:root:Using index = None
+DEBUG:root:Using index = Name
+
+
+--------------------------Test find_by_template--------------------------
+[
+  {
+    "uni": "hz",
+    "last_name": "Zhang",
+    "first_name": "Haopeng",
+    "email": "12"
+  }
+]
+
+
+--------------------------Test join--------------------------
+[
+  {
+    "uni": "zl",
+    "last_name": "Liu",
+    "first_name": "Zichen",
+    "Location": "BJ",
+    "email": "34"
+  },
+  {
+    "uni": "zt",
+    "last_name": "Tan",
+    "first_name": "Zirui",
+    "Location": "BJ",
+    "email": "56"
+  }
+]
+
+
+--------------------------Test delete-------------------------
+Before deletion:
+[
+  {
+    "uni": "hz",
+    "last_name": "Zhang",
+    "first_name": "Haopeng",
+    "email": "12"
+  },
+  {
+    "uni": "zl",
+    "last_name": "Liu",
+    "first_name": "Zichen",
+    "email": "34"
+  },
+  {
+    "uni": "zt",
+    "last_name": "Tan",
+    "first_name": "Zirui",
+    "email": "56"
+  },
+  {
+    "uni": "wz",
+    "last_name": "Zhu",
+    "first_name": "Wanqi",
+    "email": "78"
+  },
+  {
+    "uni": "yl",
+    "last_name": "Liu",
+    "first_name": "Yuhan",
+    "email": "90"
+  }
+]
+After deletion:
+[
+  {
+    "uni": "zl",
+    "last_name": "Liu",
+    "first_name": "Zichen",
+    "email": "34"
+  },
+  {
+    "uni": "zt",
+    "last_name": "Tan",
+    "first_name": "Zirui",
+    "email": "56"
+  },
+  {
+    "uni": "wz",
+    "last_name": "Zhu",
+    "first_name": "Wanqi",
+    "email": "78"
+  },
+  {
+    "uni": "yl",
+    "last_name": "Liu",
+    "first_name": "Yuhan",
+    "email": "90"
+  }
+]
+
+
+--------------------------Test load-------------------------
+Table rows:
+[
+  {
+    "last_name": "Hope",
+    "first_name": "Cheung",
+    "uni": "hz2558"
+  },
+  {
+    "last_name": "Hope",
+    "first_name": "Cheung",
+    "uni": "hz2559"
+  }
+]
+Loaded Table find_by template:
+[
+  {
+    "last_name": "Hope",
+    "first_name": "Cheung",
+    "uni": "hz2558"
+  },
+  {
+    "last_name": "Hope",
+    "first_name": "Cheung",
+    "uni": "hz2559"
+  }
+]

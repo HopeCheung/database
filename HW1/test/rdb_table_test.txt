@@ -1,0 +1,69 @@
+Test output format for People.csv:
+RDBDataTable: table_name = People
+Key fields: ['playerID']
+No. of rows = 19370
+First five rows:
+    playerID birthYear birthMonth birthDay birthCountry birthState   birthCity deathYear deathMonth deathDay deathCountry deathState deathCity nameFirst nameLast       nameGiven weight height bats throws       debut   finalGame   retroID    bbrefID
+0  aardsda01      1981         12       27          USA         CO      Denver                                                                     David  Aardsma     David Allan    215     75    R      R  2004-04-06  2015-08-23  aardd001  aardsda01
+1  aaronha01      1934          2        5          USA         AL      Mobile                                                                      Hank    Aaron     Henry Louis    180     72    R      R  1954-04-13  1976-10-03  aaroh101  aaronha01
+2  aaronto01      1939          8        5          USA         AL      Mobile      1984          8       16          USA         GA   Atlanta    Tommie    Aaron      Tommie Lee    190     75    R      R  1962-04-10  1971-09-26  aarot101  aaronto01
+3   aasedo01      1954          9        8          USA         CA      Orange                                                                       Don     Aase  Donald William    190     75    R      R  1977-07-26  1990-10-03  aased001   aasedo01
+4   abadan01      1972          8       25          USA         FL  Palm Beach                                                                      Andy     Abad   Fausto Andres    184     73    L      L  2001-09-10  2006-04-13  abada001   abadan01
+
+-----------------------------
+
+Test find_by_primary_key with primary keys for Batting: ['beckero01','1996','1','COL']:
+[{'playerID': 'beckero01', 'teamID': 'COL', 'CS': '0', 'SB': '0'}]
+Test find_by_primary_key with primary keys for Batting with no result:
+()
+
+-----------------------------
+
+Test find_by_template with template for People: {'birthYear': '1988', 'birthMonth':'5', 'birthDay':'20'}:
+[{'playerID': 'jenseky01', 'birthYear': '1988', 'birthMonth': '5', 'birthDay': '20'}, {'playerID': 'riverca02', 'birthYear': '1988', 'birthMonth': '5', 'birthDay': '20'}, {'playerID': 'sanchto01', 'birthYear': '1988', 'birthMonth': '5', 'birthDay': '20'}]
+Derived table content:
+[{'playerID': 'jenseky01', 'birthYear': '1988', 'birthMonth': '5', 'birthDay': '20'}, {'playerID': 'riverca02', 'birthYear': '1988', 'birthMonth': '5', 'birthDay': '20'}, {'playerID': 'sanchto01', 'birthYear': '1988', 'birthMonth': '5', 'birthDay': '20'}]
+
+-----------------------------
+
+Test insert:'playerID':'Hope', 'yearID':'1997', 'stint':'1', 'teamID':'Columbia':
+Insertion result:
+[{'playerID': 'Hope', 'yearID': '1997', 'stint': '1', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}]
+
+-----------------------------
+
+Test delete_by_template:
+Before deletion, the target line is shown as:
+[{'playerID': 'Hope', 'yearID': '1997', 'stint': '3', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}, {'playerID': 'Hope2', 'yearID': '1997', 'stint': '2', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}, {'playerID': 'Hope', 'yearID': '1997', 'stint': '1', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}, {'playerID': 'Hope2', 'yearID': '1997', 'stint': '1', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}]
+After deletion, the target line is shown as:
+()
+Delete counting number:4
+
+-----------------------------
+
+Test delete_by_primary_key:
+Before deletion, the target line is shown as:
+[{'playerID': 'Hope', 'yearID': '1997', 'stint': '1', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}]
+After deletion, the target line is shown as:
+()
+Delete counting number:1
+
+-----------------------------
+
+Test update_by_template:
+Before update, the target line is shown as:
+[{'playerID': 'Hope', 'yearID': '1997', 'stint': '1', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}, {'playerID': 'Hope2', 'yearID': '1997', 'stint': '1', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}]
+After update stint to 2, the target line is shown as:
+[{'playerID': 'Hope', 'yearID': '1997', 'stint': '2', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}, {'playerID': 'Hope2', 'yearID': '1997', 'stint': '2', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}]
+Update counting number:2
+
+-----------------------------
+
+Test update_by_key:
+Before update, the target line is shown as:
+[{'playerID': 'Hope', 'yearID': '1997', 'stint': '2', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}]
+After update stint to 3, the target line is shown as:
+[{'playerID': 'Hope', 'yearID': '1997', 'stint': '3', 'teamID': 'Columbia', 'lgID': 'NN', 'G': '9', 'AB': '8', 'R': '7', 'H': '6', '2B': '5', '3B': '4', 'HR': '3', 'RBI': '2', 'SB': '1', 'CS': '0', 'BB': '0', 'SO': '0', 'IBB': '0', 'HBP': '0', 'SH': '0', 'SF': '0', 'GIDP': '0'}]
+Update counting number:1
+
+-----------------------------

@@ -1,0 +1,198 @@
+CSV Result:
+[
+   {
+      "playerID": "willite01",
+      "total_AB": 7706,
+      "total_H": 2654,
+      "year": 1960,
+      "average": 0.3444069556189982,
+      "nameFirst": "Ted",
+      "nameLast": "Williams"
+   },
+   {
+      "playerID": "gwynnto01",
+      "total_AB": 9288,
+      "total_H": 3141,
+      "year": 2001,
+      "average": 0.3381782945736434,
+      "nameFirst": "Tony",
+      "nameLast": "Gwynn"
+   },
+   {
+      "playerID": "musiast01",
+      "total_AB": 10972,
+      "total_H": 3630,
+      "year": 1963,
+      "average": 0.3308421436383522,
+      "nameFirst": "Stan",
+      "nameLast": "Musial"
+   },
+   {
+      "playerID": "turnetr01",
+      "total_AB": 347,
+      "total_H": 114,
+      "year": 2016,
+      "average": 0.3285302593659942,
+      "nameFirst": "Trea",
+      "nameLast": "Turner"
+   },
+   {
+      "playerID": "boggswa01",
+      "total_AB": 9180,
+      "total_H": 3010,
+      "year": 1999,
+      "average": 0.32788671023965144,
+      "nameFirst": "Wade",
+      "nameLast": "Boggs"
+   },
+   {
+      "playerID": "carewro01",
+      "total_AB": 9315,
+      "total_H": 3053,
+      "year": 1985,
+      "average": 0.32775093934514227,
+      "nameFirst": "Rod",
+      "nameLast": "Carew"
+   },
+   {
+      "playerID": "cabremi01",
+      "total_AB": 7853,
+      "total_H": 2519,
+      "year": 2016,
+      "average": 0.3207691328154845,
+      "nameFirst": "Miguel",
+      "nameLast": "Cabrera"
+   },
+   {
+      "playerID": "puckeki01",
+      "total_AB": 7244,
+      "total_H": 2304,
+      "year": 1995,
+      "average": 0.3180563224737714,
+      "nameFirst": "Kirby",
+      "nameLast": "Puckett"
+   },
+   {
+      "playerID": "guerrvl01",
+      "total_AB": 8155,
+      "total_H": 2590,
+      "year": 2011,
+      "average": 0.31759656652360513,
+      "nameFirst": "Vladimir",
+      "nameLast": "Guerrero"
+   },
+   {
+      "playerID": "clemero01",
+      "total_AB": 9454,
+      "total_H": 3000,
+      "year": 1972,
+      "average": 0.31732599957689867,
+      "nameFirst": "Roberto",
+      "nameLast": "Clemente"
+   }
+]
+
+RDB Result:
+[
+   {
+      "playerID": "willite01",
+      "firstname": "Ted",
+      "lastname": "Williams",
+      "total_bats": 7706.0,
+      "total_hits": 2654.0,
+      "batting_average": 0.3444069556189982,
+      "first_year": "1939",
+      "last_year": "1960"
+   },
+   {
+      "playerID": "gwynnto01",
+      "firstname": "Tony",
+      "lastname": "Gwynn",
+      "total_bats": 9288.0,
+      "total_hits": 3141.0,
+      "batting_average": 0.3381782945736434,
+      "first_year": "1982",
+      "last_year": "2001"
+   },
+   {
+      "playerID": "musiast01",
+      "firstname": "Stan",
+      "lastname": "Musial",
+      "total_bats": 10972.0,
+      "total_hits": 3630.0,
+      "batting_average": 0.3308421436383522,
+      "first_year": "1941",
+      "last_year": "1963"
+   },
+   {
+      "playerID": "boggswa01",
+      "firstname": "Wade",
+      "lastname": "Boggs",
+      "total_bats": 9180.0,
+      "total_hits": 3010.0,
+      "batting_average": 0.32788671023965144,
+      "first_year": "1982",
+      "last_year": "1999"
+   },
+   {
+      "playerID": "carewro01",
+      "firstname": "Rod",
+      "lastname": "Carew",
+      "total_bats": 9315.0,
+      "total_hits": 3053.0,
+      "batting_average": 0.32775093934514227,
+      "first_year": "1967",
+      "last_year": "1985"
+   },
+   {
+      "playerID": "puckeki01",
+      "firstname": "Kirby",
+      "lastname": "Puckett",
+      "total_bats": 7244.0,
+      "total_hits": 2304.0,
+      "batting_average": 0.3180563224737714,
+      "first_year": "1984",
+      "last_year": "1995"
+   },
+   {
+      "playerID": "guerrvl01",
+      "firstname": "Vladimir",
+      "lastname": "Guerrero",
+      "total_bats": 8155.0,
+      "total_hits": 2590.0,
+      "batting_average": 0.31759656652360513,
+      "first_year": "1996",
+      "last_year": "2011"
+   },
+   {
+      "playerID": "clemero01",
+      "firstname": "Roberto",
+      "lastname": "Clemente",
+      "total_bats": 9454.0,
+      "total_hits": 3000.0,
+      "batting_average": 0.31732599957689867,
+      "first_year": "1955",
+      "last_year": "1972"
+   },
+   {
+      "playerID": "cabremi01",
+      "firstname": "Miguel",
+      "lastname": "Cabrera",
+      "total_bats": 8322.0,
+      "total_hits": 2636.0,
+      "batting_average": 0.31675078106224464,
+      "first_year": "2003",
+      "last_year": "2017"
+   },
+   {
+      "playerID": "heltoto01",
+      "firstname": "Todd",
+      "lastname": "Helton",
+      "total_bats": 7962.0,
+      "total_hits": 2519.0,
+      "batting_average": 0.31637779452398895,
+      "first_year": "1997",
+      "last_year": "2013"
+   }
+]
+

@@ -1,0 +1,7 @@
+1 Run the aeneid.py to set up the backend service;
+
+2 Run the unit_test_rest.py,and you will see the test result shown in the board;
+
+3 The screenshot and output are all showin in the testouput directory
+
+4 You can go to the http://127.0.0.1:5000/static/W4111/index.html#!/baseball website to search the baseball player's information online

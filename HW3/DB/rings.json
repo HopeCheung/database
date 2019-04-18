@@ -1,0 +1,58 @@
+{
+  "state": {
+    "table_name": "rings",
+    "primary_key_column": [
+      "uni"
+    ],
+    "columns_name": [
+      "uni",
+      "last_name",
+      "first_name",
+      "email"
+    ],
+    "next_rid": 4
+  },
+  "rows": {
+    "2": {
+      "last_name": "Hope",
+      "first_name": "Cheung",
+      "uni": "hz2558"
+    },
+    "3": {
+      "last_name": "Hope",
+      "first_name": "Cheung",
+      "uni": "hz2559"
+    }
+  },
+  "indexes": {
+    "PRIMARY": {
+      "name": "PRIMARY",
+      "columns": [
+        "uni"
+      ],
+      "kind": "PRIMARY",
+      "index_data": {
+        "hz2558": [
+          2
+        ],
+        "hz2559": [
+          3
+        ]
+      }
+    },
+    "Name": {
+      "name": "Name",
+      "columns": [
+        "last_name",
+        "first_name"
+      ],
+      "kind": "INDEX",
+      "index_data": {
+        "Hope_Cheung": [
+          2,
+          3
+        ]
+      }
+    }
+  }
+}

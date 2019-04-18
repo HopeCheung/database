@@ -1,0 +1,27 @@
+1. The CSVDataTable manages the table, and every individual can be regareded as a row. 
+
+2. insert(r) is used to insert the row in the table.
+
+3. find_by_template(tmp) is used to search the rows with specific template, and tmp is the template given
+
+4. delete(template) is used tp delete the specific row with a template.
+
+5. add_index(index_name, columns, kind) is used to add a index on the table:
+    index_name is the name of index added to the table;
+    columns are the column list cimprise the index;
+    kind is the index type
+
+6. import_data(rows) is used to insert rows into the CSVDataTable
+
+7. save() is used to save the index information in json, and the file will be stored in DB
+
+8. load() is used to load the index information from DB given the table name
+
+9. Index() class is the class of index information:
+    _index_data is a dictionary wihc contains the index and corresponding rows id
+    _index_name is the name of index
+    _kind is the type if index
+    _table_name is the table where the index set
+    _columns are the column list cimprise the index.
+
+

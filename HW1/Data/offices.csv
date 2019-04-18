@@ -1,0 +1,85 @@
+playerID,birthYear,birthMonth,birthDay,birthCountry,birthState,birthCity,deathYear,deathMonth,deathDay,deathCountry,deathState,deathCity,nameFirst,nameLast,nameGiven,weight,height,bats,throws,debut,finalGame,retroID,bbrefID
+aardsda01,1981,12,27,USA,CO,Denver,,,,,,,David,Aardsma,David Allan,215,75,R,R,2004/4/6,2015/8/23,aardd001,aardsda01
+aaronha01,1934,2,5,USA,AL,Mobile,,,,,,,Hank,Aaron,Henry Louis,180,72,R,R,1954/4/13,1976/10/3,aaroh101,aaronha01
+aaronto01,1939,8,5,USA,AL,Mobile,1984,8,16,USA,GA,Atlanta,Tommie,Aaron,Tommie Lee,190,75,R,R,1962/4/10,1971/9/26,aarot101,aaronto01
+aasedo01,1954,9,8,USA,CA,Orange,,,,,,,Don,Aase,Donald William,190,75,R,R,1977/7/26,1990/10/3,aased001,aasedo01
+abadan01,1972,8,25,USA,FL,Palm Beach,,,,,,,Andy,Abad,Fausto Andres,184,73,L,L,2001/9/10,2006/4/13,abada001,abadan01
+abadfe01,1985,12,17,D.R.,La Romana,La Romana,,,,,,,Fernando,Abad,Fernando Antonio,220,73,L,L,2010/7/28,2017/10/1,abadf001,abadfe01
+abadijo01,1850,11,4,USA,PA,Philadelphia,1905,5,17,USA,NJ,Pemberton,John,Abadie,John W.,192,72,R,R,1875-04-26,1875-06-10,abadj101,abadijo01
+abbated01,1877,4,15,USA,PA,Latrobe,1957,1,6,USA,FL,Fort Lauderdale,Ed,Abbaticchio,Edward James,170,71,R,R,1897-09-04,1910/9/15,abbae101,abbated01
+abbeybe01,1869,11,11,USA,VT,Essex,1962,6,11,USA,VT,Colchester,Bert,Abbey,Bert Wood,175,71,R,R,1892-06-14,1896-09-23,abbeb101,abbeybe01
+abbeych01,1866,10,14,USA,NE,Falls City,1926,4,27,USA,CA,San Francisco,Charlie,Abbey,Charles S.,169,68,L,L,1893-08-16,1897-08-19,abbec101,abbeych01
+abbotda01,1862,3,16,USA,OH,Portage,1930,2,13,USA,MI,Ottawa Lake,Dan,Abbott,Leander Franklin,190,71,R,R,1890-04-19,1890-05-23,abbod101,abbotda01
+abbotfr01,1874,10,22,USA,OH,Versailles,1935,6,11,USA,CA,Los Angeles,Fred,Abbott,Harry Frederick,180,70,R,R,1903/4/25,1905/9/20,abbof101,abbotfr01
+abbotgl01,1951,2,16,USA,AR,Little Rock,,,,,,,Glenn,Abbott,William Glenn,200,78,R,R,1973/7/29,1984/8/8,abbog001,abbotgl01
+abbotje01,1972,8,17,USA,GA,Atlanta,,,,,,,Jeff,Abbott,Jeffrey William,190,74,R,L,1997/6/10,2001/9/29,abboj002,abbotje01
+abbotji01,1967,9,19,USA,MI,Flint,,,,,,,Jim,Abbott,James Anthony,200,75,L,L,1989/4/8,1999/7/21,abboj001,abbotji01
+abbotku01,1969,6,2,USA,OH,Zanesville,,,,,,,Kurt,Abbott,Kurt Thomas,180,71,R,R,1993/9/7,2001/4/13,abbok002,abbotku01
+abbotky01,1968,2,18,USA,MA,Newburyport,,,,,,,Kyle,Abbott,Lawrence Kyle,200,76,L,L,1991/9/10,1996/8/24,abbok001,abbotky01
+abbotod01,1886,9,5,USA,PA,New Eagle,1933,4,13,USA,DC,Washington,Ody,Abbott,Ody Cleon,165,69,L,R,1910/9/10,1910/10/15,abboo101,abbotod01
+abbotpa01,1967,9,15,USA,CA,Van Nuys,,,,,,,Paul,Abbott,Paul David,185,75,R,R,1990/8/21,2004/8/7,abbop001,abbotpa01
+aberal01,1927,7,31,USA,OH,Cleveland,1993,5,20,USA,OH,Garfield Heights,Al,Aber,Albert Julius,195,74,L,L,1950/9/15,1957/9/11,abera101,aberal01
+abercda01,1850,1,2,USA,OK,Fort Towson,1939,11,11,USA,PA,Philadelphia,Frank,Abercrombie,Francis Patterson,,,,,1871-10-21,1871-10-21,aberd101,abercda01
+abercre01,1980,7,15,USA,GA,Columbus,,,,,,,Reggie,Abercrombie,Reginald Damascus,215,75,R,R,2006/4/4,2008/9/28,aberr001,abercre01
+abernbi01,1929,1,30,USA,CA,Torrance,2006,2,19,USA,CA,Yucaipa,Bill,Abernathie,William Edward,190,70,R,R,1952/9/27,1952/9/27,aberb101,abernbi01
+abernbr01,1977,9,23,USA,GA,Atlanta,,,,,,,Brent,Abernathy,Michael Brent,185,73,R,R,2001/6/25,2005/9/29,aberb001,abernbr01
+abernte01,1921,10,30,USA,NC,Bynum,2001,11,16,USA,NC,Charlotte,Ted,Abernathy,Talmadge Lafayette,210,74,R,L,1942/9/19,1944/4/29,abert102,abernte01
+abernte02,1933,3,6,USA,NC,Stanley,2004,12,16,USA,NC,Gastonia,Ted,Abernathy,Theodore Wade,215,76,R,R,1955/4/13,1972/9/30,abert101,abernte02
+abernwo01,1915,2,1,USA,NC,Forest City,1994,12,5,USA,KY,Louisville,Woody,Abernathy,Virgil Woodrow,170,72,L,L,1946/7/28,1947/4/17,aberw101,abernwo01
+aberscl01,1921,8,28,USA,IL,Chicago,1973,6,23,USA,CA,Vallejo,Cliff,Aberson,Clifford Alexander,200,72,R,R,1947/7/18,1949/5/9,aberc101,aberscl01
+ablesha01,1883,10,4,USA,TX,Terrell,1951,2,8,USA,TX,San Antonio,Harry,Ables,Harry Terrell,200,74,R,L,1905/9/4,1911/5/5,ableh101,ablesha01
+abnersh01,1966,6,17,USA,OH,Hamilton,,,,,,,Shawn,Abner,Shawn Wesley,190,73,R,R,1987/9/8,1992/10/3,abnes001,abnersh01
+abramca01,1924,3,2,USA,PA,Philadelphia,1997,2,25,USA,FL,Fort Lauderdale,Cal,Abrams,Calvin Ross,185,72,L,L,1949/4/19,1956/5/9,abrac101,abramca01
+abramge01,1899,11,9,USA,WA,Seattle,1986,12,5,USA,FL,Clearwater,George,Abrams,George Allen,170,69,R,R,1923/4/19,1923/5/4,abrag101,abramge01
+abregjo01,1962,7,4,USA,TX,Corpus Christi,,,,,,,Johnny,Abrego,Johnny Ray,185,72,R,R,1985/9/4,1985/10/3,abrej001,abregjo01
+abreubo01,1974,3,11,Venezuela,Aragua,Maracay,,,,,,,Bobby,Abreu,Bob Kelly,220,72,L,R,1996/9/1,2014/9/28,abreb001,abreubo01
+abreujo01,1913,5,24,USA,CA,Oakland,1993,3,17,USA,CA,Hayward,Joe,Abreu,Joseph Lawrence,160,68,R,R,1942/4/23,1942/7/11,abrej101,abreujo01
+abreujo02,1987,1,29,Cuba,Cienfuegos,Cienfuegos,,,,,,,Jose,Abreu,Jose Dariel,255,75,R,R,2014/3/31,2017/10/1,abrej003,abreujo02
+abreuju01,1985,4,8,D.R.,Duarte,San Francisco de Macoris,,,,,,,Juan,Abreu,Juan de Dios,185,72,R,R,2011/8/29,2011/9/27,abrej002,abreuju01
+abreuto01,1984,11,13,D.R.,Puerto Plata,Puerto Plata,,,,,,,Tony,Abreu,Etanislao Toni,200,70,B,R,2007/5/22,2014/7/28,abret001,abreuto01
+abreuwi01,1977,4,5,D.R.,Sanchez Ramirez,Cotui,,,,,,,Winston,Abreu,Winston Leonardo,170,74,R,R,2006/8/6,2009/7/25,abrew001,abreuwi01
+abstebi01,1883,2,2,USA,MO,St. Louis,1940,4,8,USA,MO,St. Louis,Bill,Abstein,William Henry,185,72,R,R,1906/9/25,1910/6/2,abstb101,abstebi01
+accarje01,1981,12,18,USA,AZ,Phoenix,,,,,,,Jeremy,Accardo,Jeremiah Lee,195,72,R,R,2005/5/4,2012/9/27,accaj001,accarje01
+aceveal01,1982,12,8,Mexico,Sonora,San Luis Rio Colorado,,,,,,,Alfredo,Aceves,Alfredo,205,74,R,R,2008/8/31,2014/6/2,aceva001,aceveal01
+acevejo01,1977,12,18,D.R.,Distrito Nacional,Santo Domingo,,,,,,,Jose,Acevedo,Jose Omar,185,72,R,R,2001/6/19,2005/9/29,acevj002,acevejo01
+aceveju01,1970,5,5,Mexico,Chihuahua,Ciudad Juarez,,,,,,,Juan,Acevedo,Juan Carlos,245,74,R,R,1995/4/30,2003/8/5,acevj001,aceveju01
+achteaj01,1988,8,27,USA,OH,Toledo,,,,,,,A. J.,Achter,Adam Joseph,215,77,R,R,2014/9/3,2016/10/1,achta001,achteaj01
+ackerji01,1958,9,24,USA,TX,Freer,,,,,,,Jim,Acker,James Justin,210,74,R,R,1983/4/7,1992/6/14,ackej001,ackerji01
+ackerto01,1930,3,7,USA,NJ,Paterson,,,,,,,Tom,Acker,Thomas James,215,76,R,R,1956/4/20,1959/9/20,acket101,ackerto01
+ackledu01,1988,2,26,USA,NC,Winston-Salem,,,,,,,Dustin,Ackley,Dustin Michael,205,73,L,R,2011/6/17,2016/5/29,ackld001,ackledu01
+acklefr01,1937,4,10,USA,WI,Hayward,2002,5,22,USA,MN,Duluth,Fritz,Ackley,Florian Frederick,202,73,L,R,1963/9/21,1964/5/9,acklf101,acklefr01
+acostcy01,1946,11,22,Mexico,Sinaloa,El Sabino,,,,,,,Cy,Acosta,Cecilio,165,70,R,R,1972/6/4,1975/5/5,acosc101,acostcy01
+acosted01,1944,3,9,Panama,Chiriqui,Boquete,,,,,,,Ed,Acosta,Eduardo Elixbet,215,77,B,R,1970/9/7,1972/10/4,acose101,acosted01
+acostjo01,1891,3,4,Cuba,La Habana,La Habana,1977,11,16,Cuba,La Habana,La Habana,Jose,Acosta,Jose,134,66,R,R,1920/7/28,1922/5/12,acosj101,acostjo01
+acostma01,1981,5,1,Panama,Colon,Colon,,,,,,,Manny,Acosta,Manuel Alcides,215,76,R,R,2007/8/12,2012/10/3,acosm001,acostma01
+acostme01,1896,5,19,Cuba,,Bauta,1963,11,17,USA,FL,Miami,Merito,Acosta,Baldomero Pedro,140,67,L,L,1913/6/15,1918/9/2,acosm101,acostme01
+acrema01,1968,9,16,USA,CA,Concord,,,,,,,Mark,Acre,Mark Robert,235,80,R,R,1994/5/13,1997/5/10,acrem001,acrema01
+actama99,1969,1,11,D.R.,San Pedro de Macoris,San Pedro de Macoris,,,,,,,Manny,Acta,Manuel Elias,172,74,R,R,,,actam801,actama99
+adairbi99,1913,2,10,USA,AL,Mobile,2002,6,17,USA,AL,Bay Minette,Bill,Adair,Marion Danne,168,72,R,R,,,adaib801,adairbi99
+adairje01,1936,12,17,USA,OK,Sand Springs,1987,5,31,USA,OK,Tulsa,Jerry,Adair,Kenneth Jerry,175,72,R,R,1958/9/2,1970/5/3,adaij101,adairje01
+adairji01,1907,1,25,USA,TX,Waxahachie,1982,12,9,USA,TX,Farmers Branch,Jimmy,Adair,James Aubrey,154,70,R,R,1931/8/24,1931/9/7,adaij102,adairji01
+adamecr01,1991,7,26,D.R.,Distrito Nacional,Santo Domingo,,,,,,,Cristhian,Adames,Cristhian Pascual,185,72,B,R,2014/7/29,2017/4/28,adamc001,adamecr01
+adamsac01,1910,3,2,USA,CA,Willows,2006,2,26,USA,GA,Albany,Ace,Adams,Ace Townsend,182,70,R,R,1941/4/15,1946/4/24,adama101,adamsac01
+adamsau01,1986,8,19,USA,AL,Montgomery,,,,,,,Austin,Adams,Austin David,200,71,R,R,2014/7/12,2016/9/27,adama001,adamsau01
+adamsau02,1991,5,5,USA,FL,Tampa,,,,,,,Austin,Adams,Austin Lance,225,74,R,R,2017/7/15,2017/10/1,adama002,adamsau02
+adamsba01,1882,5,18,USA,IN,Tipton,1968,7,27,USA,MD,Silver Spring,Babe,Adams,Charles Benjamin,185,71,L,R,1906/4/18,1926/8/11,adamb104,adamsba01
+adamsbe01,1891,6,21,USA,TX,Wharton,1940,6,24,USA,CA,Los Angeles,Bert,Adams,John Bertram,185,73,B,R,1910/8/30,1919/9/28,adamb106,adamsbe01
+adamsbo01,1901,7,24,USA,MA,Holyoke,1996,10,17,USA,PA,Lemoyne,Bob,Adams,Robert Burnette,168,71,R,R,1925/9/22,1925/9/23,adamb107,adamsbo01
+adamsbo02,1907,1,20,USA,AL,Birmingham,1970,3,6,USA,FL,Jacksonville,Bob,Adams,Robert Andrew,165,72,R,R,1931/9/27,1932/9/17,adamb102,adamsbo02
+adamsbo03,1921,12,14,USA,CA,Tuolumne,1997,2,13,USA,WA,Gig Harbor,Bobby,Adams,Robert Henry,160,70,R,R,1946/4/16,1959/4/22,adamb103,adamsbo03
+adamsbo04,1952,1,6,USA,PA,Pittsburgh,,,,,,,Bob,Adams,Robert Melvin,200,74,R,R,1977/7/10,1977/9/29,adamb105,adamsbo04
+adamsbu01,1915,6,24,USA,CO,Trinidad,1990,9,1,USA,CA,Rancho Mirage,Buster,Adams,Elvin Clark,180,72,R,R,1939/4/27,1947/9/21,adamb101,adamsbu01
+adamsda01,1887,6,19,USA,MO,St. Louis,1964,10,6,USA,MO,St. Louis,Dan,Adams,Daniel Leslie,165,71,R,R,1914/5/22,1915/9/26,adamd103,adamsda01
+adamsda02,1987,5,15,USA,FL,Margate,,,,,,,David,Adams,David Lee,205,74,R,R,2013/5/15,2013/9/29,adamd001,adamsda02
+adamsdi01,1920,4,8,USA,CA,Tuolumne,2016,9,14,USA,CA,Fallbrook,Dick,Adams,Richard Leroy,185,72,R,L,1947/5/20,1947/9/28,adamd102,adamsdi01
+adamsdo01,1943,1,27,USA,WI,Blue River,,,,,,,Doug,Adams,Harold Douglas,185,75,L,R,1969/9/8,1969/10/1,adamd101,adamsdo01
+adamsge01,1855,1,26,USA,MA,Worcester,1920,10,11,USA,WA,Clarkston,George,Adams,George Henry,175,66,R,R,1879-06-14,1879-06-21,adamg102,adamsge01
+adamsgl01,1947,10,4,USA,MA,Northbridge,,,,,,,Glenn,Adams,Glenn Charles,180,73,L,R,1975/5/4,1982/10/3,adamg101,adamsgl01
+adamshe01,1928,4,14,USA,CA,Hollywood,2012,2,1,USA,OK,Tulsa,Herb,Adams,Herbert Loren,160,69,L,L,1948/9/17,1950/8/30,adamh101,adamshe01
+adamsji01,1868,,,USA,IL,East St. Louis,,,,,,,Jim,Adams,James J.,148,66,,R,1890-04-21,1890-04-21,adamj101,adamsji01
+adamsjo01,1877,10,28,USA,IL,Cowden,1952,10,8,USA,MO,Bachelor,Joe,Adams,Joseph Edward,190,72,R,L,1902/4/26,1902/4/26,adamj102,adamsjo01
+adamsjo02,1971,7,2,USA,CA,Lakewood,,,,,,,Joel,Adamson,Joel Lee,185,76,L,L,1996/4/10,1998/4/26,adamj001,adamsjo02
+adamska01,1891,8,11,USA,GA,Columbus,1967,9,17,USA,WA,Everett,Karl,Adams,Karl Tutwiler,170,74,R,R,1914/4/19,1915/9/23,adamk101,adamska01
+adamsla01,1989,11,13,USA,OK,Talihina,,,,,,,Lane,Adams,Lane Weston,220,75,R,R,2014/9/1,2017/10/1,adaml001,adamsla01
+adamsma01,1988,8,31,USA,PA,Philipsburg,,,,,,,Matt,Adams,Matthew James,260,75,L,R,2012/5/20,2017/9/30,adamm002,adamsma01
+adamsmi01,1947,9,13,USA,CA,San Diego,,,,,,,Mike,Adamson,John Michael,185,74,R,R,1967/7/1,1969/5/7,adamm101,adamsmi01
